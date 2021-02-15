@@ -1,0 +1,38 @@
+int combo_toggle = FALSE;
+ 
+main {
+    if (event_press(XB360_BACK)) {
+         combo_toggle = !combo_toggle;
+    }
+ 
+    if(combo_toggle) {
+         combo_run (turbo);
+    }
+}
+ 
+combo turbo {
+    // Press X
+    set_val(XB360_X, 100);
+    wait(50);
+ 
+    // Press X
+    set_val(XB360_X, 100);
+    wait(50);
+ 
+    // Press X
+    set_val(XB360_X, 100);
+    wait(50);
+ 
+    // Press X
+    set_val(XB360_X, 100);
+    wait(50);
+ 
+    // Press X
+    set_val(XB360_X, 100);
+    wait(50);
+ 
+    // Press X
+    set_val(XB360_X, 100);
+    wait(50);
+}
+/*
